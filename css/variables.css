@@ -12,5 +12,11 @@
 
 @font-face {
     font-family: "Encode-Regular";
-    src: url(../storage/font);
+    src: url(../storage/font/Encode/EncodeSans/static/EncodeSans-Regular.ttf);
 }
+
+@font-face {
+    font-family: "Encode-Regular";
+    src: url(../storage/font/Encode/EncodeSans/static/EncodeSans-Bold.ttf);
+}
+

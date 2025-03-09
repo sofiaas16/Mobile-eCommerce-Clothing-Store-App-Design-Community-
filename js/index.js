@@ -1,3 +1,3 @@
-function redireccion (){
-    location.href = "home.html"
+function redireccion() {
+    location.href = "views/home.html"
 }
