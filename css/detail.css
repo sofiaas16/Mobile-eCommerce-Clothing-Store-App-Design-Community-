@@ -1,0 +1,36 @@
+@import url(variables.css);
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 24px 20px;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+
+}
+
+.profile-icon img {
+    width: 32px;
+    height: 32px;
+}
+
+header h2 {
+    font-family: "Encode-Regular";
+    font-size: 12px;
+    color: #787676;
+}
+
+header h1 {
+    font-family: "Encode-Bold";
+    font-size: 16px;
+    color: #121111;
+}
