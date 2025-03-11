@@ -6,9 +6,38 @@
     box-sizing: border-box;
 }
 
-.dress img {
-    width: 100px;
-    height: 100px;
+body {}
 
+.image-container {
+    background-color: red;
+    padding: 10px;
+    object-fit: contain;
+    display: flex;
+    margin: 24px;
+    object-fit: contain;
 }
 
+.image-container img {
+    width: 100%
+}
+
+
+.dress img {
+    align-items: center;
+    justify-content: center;
+}
+
+
+.content {
+    margin-top: 20px;
+}
+
+.title {
+    font-family:"Encode-Bold";  
+    font-size: 24px;
+}
+
+.rating {
+    font-family: "Encode-Regular";
+    font-size: 12px;
+}
