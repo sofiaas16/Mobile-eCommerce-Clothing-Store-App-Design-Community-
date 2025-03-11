@@ -9,6 +9,7 @@
 body {
     margin: 24px 20px;
     height: 160vh;
+   
 }
 
 header {
@@ -393,6 +394,36 @@ body {
     margin-bottom: 20px;
 }
 
+
+.circulo {
+    border-radius: 50%;
+    z-index: 100;
+    position: absolute;
+    width: 24px;
+    height: 24px; 
+    margin-top: 10px;
+    margin-left: 125px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-color: #292526;
+}
+
+.circulo2 {
+    border-radius: 50%;
+    z-index: 100;
+    position: absolute;
+    width: 24px;
+    height: 24px; 
+    margin-top: 10px;
+    margin-left: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-color: #292526;
+}
 
 
 
