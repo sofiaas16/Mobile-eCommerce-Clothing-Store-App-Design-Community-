@@ -7,16 +7,19 @@
 }
 
 body {
-    text-align: center;
+    align-items: center;
 }
 
 .image-container {
-    background-color: red;
     padding: 10px;
     object-fit: contain;
     display: flex;
     margin: 24px;
     object-fit: contain;
+}
+
+.image-container img {
+    border-radius: 25px;
 }
 
 .image-container img {
@@ -35,7 +38,7 @@ body {
 }
 
 .title {
-    font-family:"Encode-Bold";  
+    font-family: "Encode-Bold";
     font-size: 24px;
 }
 
