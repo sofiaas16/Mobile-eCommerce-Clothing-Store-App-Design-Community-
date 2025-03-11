@@ -194,7 +194,7 @@ h4 {
 }
 
 .footer-container {
-    display: flex;
+    
     justify-content: center;
     width: 100%;
     position: fixed;
@@ -202,17 +202,27 @@ h4 {
     
 }
 
+footer {
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: 1000;
+}
+
 .footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #211D1D; /* Color de fondo oscuro */
-    padding: 12px 20px;
+    background: #211D1D;
+    padding: 12px 55px;
     border-radius: 25px;
     color: white;
     font-family: "Encode-Bold";
     font-size: 16px;
 }
+
 
 .footer-icon {
     margin-right: 10px;
