@@ -49,6 +49,7 @@ header h1 {
     color: #ffffff;
     text-align: center;
 }
+
 .container {
     display: flex;
     align-items: center;
@@ -75,7 +76,8 @@ header h1 {
 /* INPUT DE BÚSQUEDA */
 .buscar-input {
     flex: 1;
-    padding: 8px 8px 8px 40px; /* Espacio a la izquierda para el icono */
+    padding: 8px 8px 8px 40px;
+    /* Espacio a la izquierda para el icono */
     border: none;
     outline: none;
     font-size: 16px;
@@ -119,8 +121,9 @@ header h1 {
     list-style: none;
     width: 100%;
     height: 50px;
-    position: absolute; 
-    top: 55px; /* Separa los resultados de la barra de búsqueda */
+    position: absolute;
+    top: 55px;
+    /* Separa los resultados de la barra de búsqueda */
     left: 0;
     z-index: 1;
     padding: 10px;
@@ -141,8 +144,9 @@ header h1 {
 }
 
 .results input {
-    color:#000
+    color: #000
 }
+
 .results li:hover {
     background-color: #ffffff;
 }
@@ -151,7 +155,7 @@ header h1 {
 .carousel-container {
     align-items: center;
     overflow: auto;
-    width:106%;
+    width: 106%;
     margin-top: 30px;
     font-family: "Encode-Regular";
     margin-left: -20px;
@@ -181,7 +185,7 @@ header h1 {
 .category img {
     width: 18px;
     height: 18px;
-    margin-right:10px;
+    margin-right: 10px;
 }
 
 
@@ -201,55 +205,127 @@ header h1 {
     justify-content: start;
     grid-template-areas:
         "Camisa1 Jean1"
-        "Dress1 Shirt2";
+        "Dress1 Shirt2"
+        "Jean2 Dress2";
+}
+
+.imagenes .text {
+    font-family: "Encode-Bold";
+    font-size: 14px;
+}
+
+.imagenes .Type {
+    font-family: "Encode-Regular";
+    font-size: 12px;
+}
+
+.imagenes .Price {
+    font-family: "Encode-Regular";
+    font-size: 14px;
+}
+
+.imagenes .rating1 {
+    font-family: "Encode-Regular";
+    font-size: 12px;
+    position: absolute;
+    margin-top: 42.5px;
+    margin-left: 60px;
+
+}
+
+.imagenes .rating2 {
+    font-family: "Encode-Regular";
+    font-size: 12px;
+
+}
+
+.idk {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+
+
+.imagenes img {
+    border-radius: 20px;
+}
+
+.texto {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: start;
+
 }
 
 .Camisa1 {
     display: flex;
     grid-area: Camisa1;
-    width: 100px;
-    height: 200px;
+    width: 155px;
+    height: 217px;
     border-radius: 50px;
-    background-color: #FFFFFF;
-    align-self: start; /* Asegura que se alinee en la parte superior */
+    align-self: start;
     justify-self: start;
     object-fit: cover;
 }
-
-
-
 
 .Jean1 {
     display: flex;
     grid-area: Jean1;
     width: 155px;
     height: 251px;
-    margin-right: 33px;
-    border-radius: 20px;
-    background-color: #FFFFFF;
-    align-self: start; 
+    align-self: start;
     justify-self: start;
 }
 
 .Dress1 {
     display: flex;
     grid-area: Dress1;
-    width: 100px;
-    height: 200px;
+    margin-top: 10px;
+    width: 155px;
+    height: 217px;
     border-radius: 20px;
     background-color: #FFFFFF;
-    align-self: start; 
+    align-self: start;
     justify-self: start;
 }
 
 
 .Shirt2 {
     display: flex;
-    grid-area: Dress1;
-    width: 100px;
-    height: 200px;
+    margin-top: 10vw;
+    grid-area: Shirt2;
+    width: 155px;
+    height: 251px;
+
     border-radius: 20px;
     background-color: #FFFFFF;
-    align-self: start; 
+    align-self: start;
+    justify-self: start;
+}
+
+
+.Jean2 {
+    display: flex;
+    grid-area: Jean2;
+    margin-top: -20px;
+    width: 155px;
+    height: 217px;
+    border-radius: 20px;
+    background-color: #FFFFFF;
+    align-self: start;
+    justify-self: start;
+}
+
+.Dress2 {
+    display: flex;
+    grid-area: Dress2;
+    margin-top: 10vw;
+    width: 155px;
+    height: 251px;
+    border-radius: 20px;
+    background-color: #FFFFFF;
+    align-self: start;
     justify-self: start;
 }
