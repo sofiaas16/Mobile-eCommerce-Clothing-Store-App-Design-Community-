@@ -1,0 +1,21 @@
+:root {
+    --color-1: #787676;
+    --color-2: #121111;
+    --color-3: #DFDEDE;
+    --color-4: #292526;
+    --color-5: #FDFDFD;
+    --color-6: #ffffff;
+    --color-7: #000000;
+    --color-8: #FDFDFD;
+
+}
+
+@font-face {
+    font-family: "Encode-Regular";
+    src: url(../storage/font/Encode/EncodeSans/static/EncodeSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Encode-Bold";
+    src: url(../storage/font/Encode/EncodeSans/static/EncodeSans-Bold.ttf);
+}
