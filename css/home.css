@@ -8,6 +8,7 @@
 
 body {
     margin: 24px 20px;
+    height: 160vh;
 }
 
 header {
@@ -328,4 +329,55 @@ header h1 {
     background-color: #FFFFFF;
     align-self: start;
     justify-self: start;
+}
+
+footer {
+    margin-top: 20px;
+    z-index: 10;
+    bottom: -40px;
+    position: fixed;
+    left: 0;
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 56px;
+
+}
+
+.seccionfooter {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    background-color: #292526;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 30px;
+
+}
+
+.seccionfooter a {
+    margin-left: -65px;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.seccion__footer img {
+    height: 24px;
+    width: 24px;
+}
+
+.seleccionado {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2px;
 }
