@@ -45,4 +45,22 @@ body {
 .rating {
     font-family: "Encode-Regular";
     font-size: 12px;
+    color: #787676;
+}
+
+.rating span {
+    color: #347EFB;
+    font-family: "Encode-Regular";
+    font-size: 12px;
+}
+
+.description {
+    font-family: "Encode-Regular";
+    color: #787676;
+}
+
+.description span {
+    font-family: "Encode-Bold";
+    font-size: 14px;
+    color: black;
 }
