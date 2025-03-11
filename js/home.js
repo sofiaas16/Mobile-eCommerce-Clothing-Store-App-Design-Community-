@@ -44,13 +44,3 @@ document.getElementById("buscar").addEventListener("keypress", function(event) {
 });
 
 
-
-function selectCategory(selectedButton) {
-    // Remueve la clase "active" de todos los botones
-    document.querySelectorAll('.category-item').forEach(button => {
-        button.classList.remove('active');
-    });
-
-    // Agrega la clase "active" al botón seleccionado
-    selectedButton.classList.add('active');
-}

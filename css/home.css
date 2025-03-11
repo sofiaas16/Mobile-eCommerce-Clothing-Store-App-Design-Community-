@@ -153,7 +153,7 @@ header h1 {
     overflow: auto;
     width:106%;
     margin-top: 30px;
-    font-family: "Sora-Regular";
+    font-family: "Encode-Regular";
     margin-left: -20px;
 
 }
@@ -179,8 +179,9 @@ header h1 {
 }
 
 .category img {
-    width: 16px;
-    height: 16px;
+    width: 18px;
+    height: 18px;
+    margin-right:10px;
 }
 
 
@@ -188,4 +189,67 @@ header h1 {
     background: black;
     color: white;
     border: none;
+}
+
+
+.imagenes {
+    display: grid;
+    padding-top: 40px;
+    gap: 0px;
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+    justify-content: start;
+    grid-template-areas:
+        "Camisa1 Jean1"
+        "Dress1 Shirt2";
+}
+
+.Camisa1 {
+    display: flex;
+    grid-area: Camisa1;
+    width: 100px;
+    height: 200px;
+    border-radius: 50px;
+    background-color: #FFFFFF;
+    align-self: start; /* Asegura que se alinee en la parte superior */
+    justify-self: start;
+    object-fit: cover;
+}
+
+
+
+
+.Jean1 {
+    display: flex;
+    grid-area: Jean1;
+    width: 155px;
+    height: 251px;
+    margin-right: 33px;
+    border-radius: 20px;
+    background-color: #FFFFFF;
+    align-self: start; 
+    justify-self: start;
+}
+
+.Dress1 {
+    display: flex;
+    grid-area: Dress1;
+    width: 100px;
+    height: 200px;
+    border-radius: 20px;
+    background-color: #FFFFFF;
+    align-self: start; 
+    justify-self: start;
+}
+
+
+.Shirt2 {
+    display: flex;
+    grid-area: Dress1;
+    width: 100px;
+    height: 200px;
+    border-radius: 20px;
+    background-color: #FFFFFF;
+    align-self: start; 
+    justify-self: start;
 }
