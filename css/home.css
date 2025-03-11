@@ -49,38 +49,45 @@ header h1 {
     color: #ffffff;
     text-align: center;
 }
-
 .container {
     display: flex;
-    flex-direction: column;
     align-items: center;
     width: 100%;
+    max-width: 400px;
     height: 45px;
     padding: 8px;
     border-radius: 10px;
     border: 1px solid #CAC9C9;
+    background: #fff;
+    position: relative;
 
 }
+
 
 .container img {
     width: 20px;
     height: 20px;
-    margin-left: -78px;
+    position: absolute;
+    left: 15px;
+    top: 10px;
 }
 
-
+/* INPUT DE BÚSQUEDA */
 .buscar-input {
-
-    padding: 8px;
+    flex: 1;
+    padding: 8px 8px 8px 40px; /* Espacio a la izquierda para el icono */
     border: none;
     outline: none;
     font-size: 16px;
-    color: #000000;
+    color: #000;
+    width: 100%;
 }
 
 .buscar-input::placeholder {
     font-family: "Encode-Regular";
+    color: #888;
 }
+
 
 .buscar-button {
     display: flex;
@@ -92,7 +99,8 @@ header h1 {
     border: none;
     border-radius: 50%;
     cursor: pointer;
-    transition: all 0.3s ease;
+
+    margin-left: 10px;
 }
 
 .buscar-button img {
@@ -104,28 +112,80 @@ header h1 {
     background-color: #555;
 }
 
-/* Estilos del mensaje de resultados */
+
+
+
 .results {
     list-style: none;
     width: 100%;
-    margin-top: 10px;
-    /* Se separa de la barra de búsqueda */
+    height: 50px;
+    position: absolute; 
+    top: 55px; /* Separa los resultados de la barra de búsqueda */
+    left: 0;
+    z-index: 1;
     padding: 10px;
     border-radius: 5px;
     font-size: 16px;
-    color: #000;
+    color: #fff;
     text-align: center;
-
 }
 
 .results li {
     padding: 10px;
     border-radius: 5px;
-    background-color: aqua;
-    font-size: 18px;
-    margin-bottom: 5px;
+    background-color: #787676;
+    margin-top: -3px;
+    font-size: 15px;
+    z-index: 2;
+    font-family: "Encode-Bold";
 }
 
+.results input {
+    color:#000
+}
 .results li:hover {
     background-color: #ffffff;
+}
+
+
+.carousel-container {
+    align-items: center;
+    overflow: auto;
+    width:106%;
+    margin-top: 30px;
+    font-family: "Sora-Regular";
+    margin-left: -20px;
+
+}
+
+.carousel {
+    position: relative;
+    display: flex;
+    gap: 15px;
+    overflow-x: auto;
+    white-space: nowrap;
+    width: 98vw;
+    margin-left: 20px;
+}
+
+.category {
+    background-color: #EDEDED;
+    color: #313131;
+    padding: 10px 15px;
+    border-radius: 12px;
+    font-size: 15.8px;
+    transition: 0.3s;
+
+}
+
+.category img {
+    width: 16px;
+    height: 16px;
+}
+
+
+.category.selected {
+    background: black;
+    color: white;
+    border: none;
 }
