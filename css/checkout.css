@@ -77,6 +77,30 @@
     font-size: 10px;
 }
 
+.cart-item1 span {
+    color: #292526;
+    font-family: "Encode-Bold";
+    font-size: 14px;
+}
+
+.cart-item2 h3 {
+    color: #121111;
+    font-family: "Encode-Bold";
+    font-size: 14px;
+}
+
+.cart-item2 p {
+    color: #787676;
+    font-family: "Encode-Regular";
+    font-size: 10px;
+}
+
+.cart-item2 span {
+    color: #292526;
+    font-family: "Encode-Bold";
+    font-size: 14px;
+}
+
 
 /* Estilo general de los ítems */
 .cart-item1, .cart-item2 {
@@ -172,7 +196,7 @@
     padding: 12px;
     border-radius: 10px;
     justify-content: space-between;
-    cursor: pointer;
+    font-family: "Encode-Regular";
 }
 
 .payment-method img {
