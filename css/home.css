@@ -381,3 +381,18 @@ footer {
     justify-content: center;
     gap: 2px;
 }
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.product {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+
+
+

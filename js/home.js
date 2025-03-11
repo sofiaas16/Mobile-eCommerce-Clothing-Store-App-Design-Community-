@@ -44,3 +44,11 @@ document.getElementById("buscar").addEventListener("keypress", function(event) {
 });
 
 
+function toggleLike(button) {
+    let img = button.querySelector("img");
+    if (img.src.includes("heartfree.png")) {
+        img.src = "img/heartfilled.png";  // Cambia al corazón lleno
+    } else {
+        img.src = "img/heartfree.png";  // Cambia al corazón vacío
+    }
+}
