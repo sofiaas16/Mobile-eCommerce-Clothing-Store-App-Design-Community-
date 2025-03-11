@@ -1,0 +1,51 @@
+@import url(variables.css);
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+    margin: 0;
+}
+
+.imagen {
+    position: relative;
+    width: 300px;
+    border-radius: 20px;
+    
+}
+
+.profile {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 20px;
+}
+
+.back-btn, .like-btn {
+    background: none;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 20px;
+
+}
+
+
+.back-btn {
+    top: 10px;
+    left: 10px;
+}
+
+.like-btn {
+    top: 10px;
+    right: 10px;
+}
