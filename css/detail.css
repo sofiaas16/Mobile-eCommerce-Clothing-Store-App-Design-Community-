@@ -11,6 +11,7 @@ body {
 }
 
 .image-container {
+
     padding: 10px;
     object-fit: contain;
     display: flex;
@@ -33,19 +34,77 @@ body {
 }
 
 
+
 .content {
-    margin-top: 20px;
+    display: grid;
+    margin: 64px;
+    max-width: 100%;
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr 1fr; 
+    gap: 10px; 
+    grid-template-areas:
+        "titulo quantity"
+        "rating quantity";
 }
 
 .title {
     font-family: "Encode-Bold";
     font-size: 24px;
+    grid-area: titulo;
+    margin-top: -60px;
+    margin-left: -25px;
 }
+
 
 .rating {
     font-family: "Encode-Regular";
     font-size: 12px;
     color: #787676;
+    grid-area: rating;
+    margin-left: -25px;
+}
+
+.bottom {
+    display: flex;
+    grid-area: quantity;
+    justify-content: center;
+    align-items: center;
+    margin-top: -60px;
+}
+
+.quantity {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: -65px;
+    margin-right:-600px;
+    grid-area: quantity;
+}
+
+.quantity button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    background: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.count {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.rating {
+ 
+    margin-top: -20px;
 }
 
 .rating span {
@@ -55,12 +114,20 @@ body {
 }
 
 .description {
+   
     font-family: "Encode-Regular";
     color: #787676;
+    text-align: left;
+    margin-top: -10%;
+    margin-left: 8%;
+    max-width: 350px;
+    
 }
 
 .description span {
+    display: flex;
     font-family: "Encode-Bold";
     font-size: 14px;
     color: black;
+
 }

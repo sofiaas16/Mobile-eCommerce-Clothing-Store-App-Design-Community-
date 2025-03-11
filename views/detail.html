@@ -10,24 +10,53 @@
 
 <body>
     <div class="container">
-        <div class="image-container">
-            <img src="../storage/img/vestido.png" alt="" class="dress">
-        </div>
-
-        <div class="content">
-            <div class="rating">
-                ⭐ 5.0 <span class="reviews">(7,932 reviews)</span>
+        <div class="primera">
+            <div class="image-container">
+                <img src="../storage/img/vestido.png" alt="" class="dress">
             </div>
-            <h2 class="title">Light Dress Bless</h2>
+
+            <div class="content">
+                <h2 class="title">Light Dress Bless</h2>
+                <div class="rating">
+                    ⭐ 5.0 <span class="reviews">(7,932 reviews)</span>
+
+                    <div class="quantity">
+                        <button class="decrease">−</button>
+                        <span class="count">1</span>
+                        <button class="increase">+</button>
+                    </div>
+                </div>
+            </div>
+
             <p class="description">
                 Its simple and elegant shape makes it perfect for those of you who like minimalist clothes
                 <span class="read-more">Read More...</span>
             </p>
 
+            <div class="options-container">
+                <div class="size-selector">
+                    <h4>Choose Size</h4>
+                    <div class="sizes">
+                        <button class="size">S</button>
+                        <button class="size">M</button>
+                        <button class="size active">L</button>
+                        <button class="size">XL</button>
+                    </div>
+                </div>
+        
+                <div class="color-selector">
+                    <h4>Color</h4>
+                    <div class="colors">
+                        <button class="color" style="background: #888;"></button>
+                        <button class="color" style="background: #555;"></button>
+                        <button class="color" style="background: #000;"></button>
+                    </div>
                 </div>
             </div>
         </div>
+    <script src="../js/detail.js"></script>
     </div>
+    
 </body>
 
 </html>
