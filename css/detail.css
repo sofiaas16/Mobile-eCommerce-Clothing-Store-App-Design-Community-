@@ -17,6 +17,7 @@ body {
     display: flex;
     margin: 24px;
     object-fit: contain;
+    border-radius: 20px;
 }
 
 .image-container img {
