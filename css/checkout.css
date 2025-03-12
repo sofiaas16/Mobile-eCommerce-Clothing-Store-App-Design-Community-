@@ -76,6 +76,7 @@
     color: #787676;
     font-family: "Encode-Regular";
     font-size: 10px;
+    
 }
 
 .cart-item1 span {
@@ -168,6 +169,7 @@
 .quantity span {
     font-size: 16px;
     font-weight: bold;
+
 }
 
 /* Botón de opciones */
@@ -180,9 +182,10 @@
 }
 
 .options-btn img {
-    width: 24px; /* Ajusta el tamaño según necesites */
+    width: 24px;
+    /* Ajusta el tamaño según necesites */
     height: 24px;
-    
+
 }
 
 /* Contenedor de la información de envío */
@@ -206,12 +209,15 @@
     border-radius: 10px;
     justify-content: space-between;
     font-family: "Encode-Regular";
+    
 }
-
+.payment-method span {
+    margin-left: -100px;
+}
 .payment-method img {
     width: 15px;
     height: 15px;
-    
+
 }
 
 .payment-details {
