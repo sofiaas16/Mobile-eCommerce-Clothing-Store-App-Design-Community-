@@ -1,0 +1,288 @@
+@import url(variables.css);
+
+.checkout-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background: white;
+    border-bottom: 1px solid #ddd;
+}
+
+.checkout-header h2 {
+    font-size: 20px;
+    font-family: "Encode-Bold";
+    text-align: center;
+    flex-grow: 1;
+}
+
+.checkout-header button {
+    background: none;
+    border: 1px solid #ddd;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.checkout-header button:active {
+    background: #f0f0f0;
+}
+
+/* Estilo del encabezado */
+.checkout-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    font-family: Arial, sans-serif;
+}
+
+.checkout-header h2 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.checkout-header button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.checkout-header img {
+    width: 24px;
+    height: 24px;
+}
+
+/* Contenedor de los ítems */
+.cart-items {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+}
+
+.cart-item1 h3 {
+    color: #121111;
+    font-family: "Encode-Bold";
+    font-size: 14px;
+}
+
+.cart-item1 p {
+    color: #787676;
+    font-family: "Encode-Regular";
+    font-size: 10px;
+    
+}
+
+.cart-item1 span {
+    color: #292526;
+    font-family: "Encode-Bold";
+    font-size: 14px;
+}
+
+.cart-item2 h3 {
+    color: #121111;
+    font-family: "Encode-Bold";
+    font-size: 14px;
+}
+
+.cart-item2 p {
+    color: #787676;
+    font-family: "Encode-Regular";
+    font-size: 10px;
+}
+
+.cart-item2 span {
+    color: #292526;
+    font-family: "Encode-Bold";
+    font-size: 14px;
+}
+
+
+/* Estilo general de los ítems */
+.cart-item1,
+.cart-item2 {
+    display: flex;
+    align-items: center;
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* Imagen del producto */
+.cart-item1 img,
+.cart-item2 img {
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-right: 15px;
+}
+
+/* Información del producto */
+.item-info {
+    flex: 1;
+}
+
+.item-info h3 {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.item-info p {
+    font-size: 14px;
+    color: #777;
+    margin: 2px 0;
+}
+
+.price {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Controles de cantidad */
+.quantity {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.quantity button {
+    background: none;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.quantity span {
+    font-size: 16px;
+    font-weight: bold;
+
+}
+
+/* Botón de opciones */
+.options-btn {
+    background: none;
+    border: none;
+    margin-top: -55px;
+    margin-right: -90px;
+
+}
+
+.options-btn img {
+    width: 24px;
+    /* Ajusta el tamaño según necesites */
+    height: 24px;
+
+}
+
+/* Contenedor de la información de envío */
+.shipping-info {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+.shipping-info h3 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Método de pago */
+.payment-method {
+    display: flex;
+    align-items: center;
+    background: #f5f5f5;
+    padding: 12px;
+    border-radius: 10px;
+    justify-content: space-between;
+    font-family: "Encode-Regular";
+    
+}
+.payment-method span {
+    margin-left: -100px;
+}
+.payment-method img {
+    width: 15px;
+    height: 15px;
+
+}
+
+.payment-details {
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+
+.card-number {
+    font-size: 14px;
+    color: #333;
+}
+
+.arrow-down {
+    font-size: 16px;
+    color: #777;
+}
+
+/* Detalles del costo */
+.cost-summary {
+    margin-top: 15px;
+}
+
+.cost-item {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.cost-item span {
+    font-weight: bold;
+}
+
+.total-cost {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+    padding-top: 5px;
+    border-top: 1px solid #ddd;
+}
+
+.order-summary p {
+    color: #292526;
+    font-family: "Encode-Regular";
+    font-size: 14px;
+}
+
+.order-summary span {
+    color: #121111;
+    font-family: "Encode-Bold";
+    font-size: 14px;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #211D1D;
+    padding: 20px 150px;
+    border-radius: 25px;
+    color: white;
+    font-family: "Encode-Bold";
+    font-size: 16px;
+}
+
