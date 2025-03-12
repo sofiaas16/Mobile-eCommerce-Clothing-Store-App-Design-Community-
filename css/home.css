@@ -334,7 +334,7 @@ header h1 {
 
 footer {
     margin-top: 20px;
-    z-index: 10;
+    z-index: 999;
     bottom: -40px;
     position: fixed;
     left: 0;
@@ -345,7 +345,7 @@ footer {
     justify-content: center;
     align-items: center;
     gap: 56px;
-
+   
 }
 
 .seccionfooter {
@@ -411,7 +411,7 @@ body {
 }
 
 #toggle:checked+.icon {
-    content: url("../storage/img/heartfull.png");
+    content: url("../storage/img/heartfull2.png");
 }
 
 

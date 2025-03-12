@@ -42,12 +42,19 @@ body {
 
 }
 
+.btn img {
+    position: relative;
+    width: 62px;
+    right: 10px;
+    top: -7px;
+}
+
 .btn button {
     border: none;
     border-radius: 20px;
     width: 40px;
     height: 40px;
-    background-color: white;
+
 }
 
 .content {
@@ -262,8 +269,8 @@ footer {
     position: absolute;
     width: 40px;
     height: 40px;
-    margin-top: -114.2%;
-    margin-left: 340px;
+    margin-top: -113%;
+    margin-left: 300px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -273,7 +280,7 @@ footer {
 }
 
 #toggle:checked+.icon {
-    content: url("../storage/img/heartfree.png");
+    content: url("../storage/img/heart.png");
 }
 
 .circulo2 {
@@ -290,4 +297,3 @@ footer {
     overflow: hidden;
     background-color: #000000;
 }
-
