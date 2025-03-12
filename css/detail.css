@@ -34,15 +34,28 @@ body {
     justify-content: center;
 }
 
+.btn {
+    position: absolute;
+    top: 60px;
+    z-index: 2;
+    margin-left: 20px;
 
+}
+
+.btn button {
+    border: none;
+    border-radius: 20px;
+    width: 40px;
+    height: 40px;
+}
 
 .content {
     display: grid;
     margin: 64px;
     max-width: 100%;
-    grid-template-columns: 1fr 1fr; 
-    grid-template-rows: 1fr 1fr; 
-    gap: 10px; 
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
     grid-template-areas:
         "titulo quantity"
         "rating quantity";
@@ -106,7 +119,7 @@ body {
 }
 
 .rating {
- 
+
     margin-top: -20px;
 }
 
@@ -117,14 +130,14 @@ body {
 }
 
 .description {
-   
+
     font-family: "Encode-Regular";
     color: #787676;
     text-align: left;
     margin-top: -10%;
     margin-left: 8%;
     max-width: 350px;
-    
+
 }
 
 .description span {
@@ -144,10 +157,11 @@ body {
     padding: 20px;
     border-radius: 10px;
     margin-left: -15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
 }
 
-.size-selector, .color-selector {
+.size-selector,
+.color-selector {
     display: flex;
     flex-direction: column;
     text-align: left;
@@ -158,7 +172,7 @@ h4 {
     font-size: 14px;
     margin-bottom: 8px;
     font-family: "Encode-Bold";
-    
+
 }
 
 .sizes {
@@ -184,7 +198,7 @@ h4 {
 .color-selector .colors {
     display: flex;
     gap: 5px;
-    
+
 }
 
 .color {
@@ -195,12 +209,12 @@ h4 {
 }
 
 .footer-container {
-    
+
     justify-content: center;
     width: 100%;
     position: fixed;
-    bottom: 20px; 
-    
+    bottom: 20px;
+
 }
 
 footer {
