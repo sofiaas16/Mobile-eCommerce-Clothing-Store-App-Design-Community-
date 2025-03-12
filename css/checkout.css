@@ -65,6 +65,7 @@
     gap: 15px;
     padding: 20px;
 }
+
 .cart-item1 h3 {
     color: #121111;
     font-family: "Encode-Bold";
@@ -103,7 +104,8 @@
 
 
 /* Estilo general de los ítems */
-.cart-item1, .cart-item2 {
+.cart-item1,
+.cart-item2 {
     display: flex;
     align-items: center;
     background: white;
@@ -112,7 +114,8 @@
 }
 
 /* Imagen del producto */
-.cart-item1 img, .cart-item2 img {
+.cart-item1 img,
+.cart-item2 img {
     width: 60px;
     height: 60px;
     border-radius: 10px;
@@ -171,9 +174,15 @@
 .options-btn {
     background: none;
     border: none;
-    font-size: 18px;
-    cursor: pointer;
-    margin-left: 10px;
+    margin-top: -55px;
+    margin-right: -90px;
+
+}
+
+.options-btn img {
+    width: 24px; /* Ajusta el tamaño según necesites */
+    height: 24px;
+    
 }
 
 /* Contenedor de la información de envío */
@@ -200,9 +209,9 @@
 }
 
 .payment-method img {
-    width: 40px;
-    height: 25px;
-    margin-right: 10px;
+    width: 15px;
+    height: 15px;
+    
 }
 
 .payment-details {
@@ -245,4 +254,16 @@
     margin-top: 10px;
     padding-top: 5px;
     border-top: 1px solid #ddd;
+}
+
+.order-summary p {
+    color: #292526;
+    font-family: "Encode-Regular";
+    font-size: 14px;
+}
+
+.order-summary span {
+    color: #121111;
+    font-family: "Encode-Bold";
+    font-size: 14px;
 }
