@@ -1,0 +1,431 @@
+@import url(variables.css);
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 24px 20px;
+    height: 160vh;
+
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+
+}
+
+.profile-icon img {
+    width: 32px;
+    height: 32px;
+}
+
+.Hello {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+header h2 {
+    font-family: "Encode-Regular";
+    font-size: 12px;
+    color: #787676;
+}
+
+header h1 {
+    font-family: "Encode-Bold";
+    font-size: 16px;
+    color: #121111;
+}
+
+#ListaArticulos {
+    font-size: 30px;
+    margin-top: 20px;
+    list-style: none;
+    font-weight: 600;
+    color: #ffffff;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+    height: 45px;
+    padding: 8px;
+    border-radius: 10px;
+    border: 1px solid #CAC9C9;
+    background: #fff;
+    position: relative;
+
+}
+
+
+.container img {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 15px;
+    top: 10px;
+}
+
+/* INPUT DE BÚSQUEDA */
+.buscar-input {
+    flex: 1;
+    padding: 8px 8px 8px 40px;
+    /* Espacio a la izquierda para el icono */
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: #000;
+    width: 100%;
+}
+
+.buscar-input::placeholder {
+    font-family: "Encode-Regular";
+    color: #888;
+}
+
+
+.buscar-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: #333;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+
+    margin-left: 10px;
+}
+
+.buscar-button img {
+    width: 20px;
+    height: 20px;
+}
+
+.buscar-button:hover {
+    background-color: #555;
+}
+
+
+
+
+.results {
+    list-style: none;
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    top: 55px;
+    /* Separa los resultados de la barra de búsqueda */
+    left: 0;
+    z-index: 1;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+}
+
+.results li {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #787676;
+    margin-top: -3px;
+    font-size: 15px;
+    z-index: 2;
+    font-family: "Encode-Bold";
+}
+
+.results input {
+    color: #000
+}
+
+.results li:hover {
+    background-color: #ffffff;
+}
+
+
+.carousel-container {
+    align-items: center;
+    overflow: auto;
+    width: 106%;
+    margin-top: 30px;
+    font-family: "Encode-Regular";
+    margin-left: -20px;
+
+}
+
+.carousel {
+    position: relative;
+    display: flex;
+    gap: 15px;
+    overflow-x: auto;
+    white-space: nowrap;
+    width: 98vw;
+    margin-left: 20px;
+}
+
+.category {
+    background-color: #EDEDED;
+    color: #313131;
+    padding: 10px 15px;
+    border-radius: 12px;
+    font-size: 15.8px;
+    transition: 0.3s;
+
+}
+
+.category img {
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+}
+
+
+.category.selected {
+    background: black;
+    color: white;
+    border: none;
+}
+
+
+.imagenes {
+    display: grid;
+    padding-top: 40px;
+    gap: 0px;
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+    justify-content: start;
+    grid-template-areas:
+        "Camisa1 Jean1"
+        "Dress1 Shirt2"
+        "Jean2 Dress2";
+}
+
+.imagenes .text {
+    font-family: "Encode-Bold";
+    font-size: 14px;
+}
+
+.imagenes .Type {
+    font-family: "Encode-Regular";
+    font-size: 12px;
+}
+
+.imagenes .Price {
+    font-family: "Encode-Regular";
+    font-size: 14px;
+}
+
+.imagenes .rating1 {
+    font-family: "Encode-Regular";
+    font-size: 12px;
+    position: absolute;
+    margin-top: 42.5px;
+    margin-left: 60px;
+
+}
+
+.imagenes .rating2 {
+    font-family: "Encode-Regular";
+    font-size: 12px;
+
+}
+
+.idk {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+
+
+.imagenes img {
+    border-radius: 20px;
+}
+
+.texto {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: start;
+
+}
+
+.Camisa1 {
+    display: flex;
+    grid-area: Camisa1;
+    width: 155px;
+    height: 217px;
+    border-radius: 50px;
+    align-self: start;
+    justify-self: start;
+    object-fit: cover;
+}
+
+.Jean1 {
+    display: flex;
+    grid-area: Jean1;
+    width: 155px;
+    height: 251px;
+    align-self: start;
+    justify-self: start;
+}
+
+.Dress1 {
+    display: flex;
+    grid-area: Dress1;
+    margin-top: 10px;
+    width: 155px;
+    height: 217px;
+    border-radius: 20px;
+    background-color: #FFFFFF;
+    align-self: start;
+    justify-self: start;
+}
+
+
+.Shirt2 {
+    display: flex;
+    margin-top: 10vw;
+    grid-area: Shirt2;
+    width: 155px;
+    height: 251px;
+
+    border-radius: 20px;
+    background-color: #FFFFFF;
+    align-self: start;
+    justify-self: start;
+}
+
+
+.Jean2 {
+    display: flex;
+    grid-area: Jean2;
+    margin-top: -20px;
+    width: 155px;
+    height: 217px;
+    border-radius: 20px;
+    background-color: #FFFFFF;
+    align-self: start;
+    justify-self: start;
+}
+
+.Dress2 {
+    display: flex;
+    grid-area: Dress2;
+    margin-top: 10vw;
+    width: 155px;
+    height: 251px;
+    border-radius: 20px;
+    background-color: #FFFFFF;
+    align-self: start;
+    justify-self: start;
+}
+
+footer {
+    margin-top: 20px;
+    z-index: 10;
+    bottom: -40px;
+    position: fixed;
+    left: 0;
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 56px;
+
+}
+
+.seccionfooter {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    background-color: #292526;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 30px;
+
+}
+
+.seccionfooter a {
+    margin-left: -65px;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.seccion__footer img {
+    height: 24px;
+    width: 24px;
+}
+
+.seleccionado {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.product {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+
+.circulo {
+    border-radius: 50%;
+    z-index: 100;
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    margin-top: 10px;
+    margin-left: 125px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-color: #292526;
+}
+
+#toggle:checked+.icon {
+    content: url("../storage/img/heartfull.png");
+}
+
+
+.circulo2 {
+    border-radius: 50%;
+    z-index: 100;
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    margin-top: 10px;
+    margin-left: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-color: #292526;
+}

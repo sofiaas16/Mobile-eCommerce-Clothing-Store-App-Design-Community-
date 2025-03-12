@@ -7,16 +7,42 @@
     --color-6: #ffffff;
     --color-7: #000000;
     --color-8: #FDFDFD;
+<<<<<<< HEAD
     --color-9: #347EFB;
+=======
+<<<<<<< HEAD
+    --color-9: #347EFB;
+=======
+>>>>>>> 65146e2f86af3259c4ae9b93edb744ab7a6ac7f9
+>>>>>>> ff4eaec356ff8a142cbea6f0362646e8ba0815c6
 
 }
 
 @font-face {
     font-family: "Encode-Regular";
+<<<<<<< HEAD
     src: url(../storage/font/Encode/Encode_Sans/static/EncodeSans-Regular.ttf);
+=======
+<<<<<<< HEAD
+    src: url(../storage/font/Encode/Encode_Sans/static/EncodeSans-Regular.ttf);
+=======
+    src: url(../storage/font/Encode/EncodeSans/static/EncodeSans-Regular.ttf);
+>>>>>>> 65146e2f86af3259c4ae9b93edb744ab7a6ac7f9
+>>>>>>> ff4eaec356ff8a142cbea6f0362646e8ba0815c6
 }
 
 @font-face {
     font-family: "Encode-Bold";
+<<<<<<< HEAD
     src: url(../storage/font/Encode/Encode_Sans/static/EncodeSans-Bold.ttf);
 }
+=======
+<<<<<<< HEAD
+    src: url(../storage/font/Encode/Encode_Sans/static/EncodeSans-Bold.ttf);
+}
+=======
+    src: url(../storage/font/Encode/EncodeSans/static/EncodeSans-Bold.ttf);
+}
+
+>>>>>>> 65146e2f86af3259c4ae9b93edb744ab7a6ac7f9
+>>>>>>> ff4eaec356ff8a142cbea6f0362646e8ba0815c6
