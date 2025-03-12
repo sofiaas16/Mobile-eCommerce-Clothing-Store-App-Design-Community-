@@ -1,0 +1,293 @@
+@import url(variables.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    align-items: center;
+}
+
+.image-container {
+
+    padding: 10px;
+    object-fit: contain;
+    display: flex;
+    margin: 24px;
+    object-fit: contain;
+    border-radius: 20px;
+}
+
+.image-container img {
+    border-radius: 25px;
+}
+
+.image-container img {
+    width: 100%
+}
+
+
+.dress img {
+    align-items: center;
+    justify-content: center;
+}
+
+.btn {
+    position: absolute;
+    top: 60px;
+    z-index: 2;
+    margin-left: 20px;
+
+}
+
+.btn button {
+    border: none;
+    border-radius: 20px;
+    width: 40px;
+    height: 40px;
+    background-color: white;
+}
+
+.content {
+    display: grid;
+    margin: 64px;
+    max-width: 100%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+    grid-template-areas:
+        "titulo quantity"
+        "rating quantity";
+}
+
+.title {
+    font-family: "Encode-Bold";
+    font-size: 24px;
+    grid-area: titulo;
+    margin-top: -70px;
+    margin-left: -25px;
+}
+
+.quantity {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: -65px;
+    grid-area: quantity;
+    margin-left: 200px;
+    position: absolute;
+}
+
+.rating {
+    font-family: "Encode-Regular";
+    font-size: 12px;
+    color: #787676;
+    grid-area: rating;
+    margin-left: -25px;
+}
+
+.bottom {
+    display: flex;
+    grid-area: quantity;
+    justify-content: center;
+    align-items: center;
+    margin-top: -60px;
+
+}
+
+
+.quantity button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    background: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.count {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.rating {
+
+    margin-top: -20px;
+}
+
+.rating span {
+    color: #347EFB;
+    font-family: "Encode-Regular";
+    font-size: 12px;
+}
+
+.description {
+
+    font-family: "Encode-Regular";
+    color: #787676;
+    text-align: left;
+    margin-top: -10%;
+    margin-left: 8%;
+    max-width: 350px;
+
+}
+
+.description span {
+    display: flex;
+    font-family: "Encode-Bold";
+    font-size: 14px;
+    color: black;
+
+}
+
+.options-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 400px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-left: -15px;
+
+}
+
+.size-selector,
+.color-selector {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-left: 25px;
+}
+
+h4 {
+    font-size: 14px;
+    margin-bottom: 8px;
+    font-family: "Encode-Bold";
+
+}
+
+.sizes {
+    display: flex;
+    gap: 8px;
+}
+
+.size {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 1px solid #DFDEDE;
+    cursor: pointer;
+    font-size: 14px;
+    font-family: "Encode-Bold";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.color-selector .colors {
+    display: flex;
+    gap: 5px;
+
+}
+
+.color {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: none;
+}
+
+.footer-container {
+
+    justify-content: center;
+    width: 100%;
+    position: fixed;
+    bottom: 20px;
+
+}
+
+footer {
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #211D1D;
+    padding: 12px 55px;
+    border-radius: 25px;
+    color: white;
+    font-family: "Encode-Bold";
+    font-size: 16px;
+}
+
+
+.footer-icon {
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+.price {
+    font-weight: bold;
+    margin-left: 8px;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: #bbb;
+    font-size: 14px;
+    margin-left: 5px;
+}
+
+.circulo {
+    border-radius: 50%;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    margin-top: -114.2%;
+    margin-left: 340px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-color: #FDFDFD;
+    z-index: 2;
+}
+
+#toggle:checked+.icon {
+    content: url("../storage/img/heartfree.png");
+}
+
+.circulo2 {
+    border-radius: 50%;
+    z-index: 100;
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    margin-top: 10px;
+    margin-left: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-color: #000000;
+}
+
