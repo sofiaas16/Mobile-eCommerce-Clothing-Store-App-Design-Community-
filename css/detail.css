@@ -47,6 +47,7 @@ body {
     border-radius: 20px;
     width: 40px;
     height: 40px;
+    background-color: white;
 }
 
 .content {
@@ -255,3 +256,38 @@ footer {
     font-size: 14px;
     margin-left: 5px;
 }
+
+.circulo {
+    border-radius: 50%;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    margin-top: -114.2%;
+    margin-left: 340px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-color: #FDFDFD;
+    z-index: 2;
+}
+
+#toggle:checked+.icon {
+    content: url("../storage/img/heartfree.png");
+}
+
+.circulo2 {
+    border-radius: 50%;
+    z-index: 100;
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    margin-top: 10px;
+    margin-left: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-color: #000000;
+}
+
