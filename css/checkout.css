@@ -273,3 +273,16 @@
     font-family: "Encode-Bold";
     font-size: 14px;
 }
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #211D1D;
+    padding: 20px 150px;
+    border-radius: 25px;
+    color: white;
+    font-family: "Encode-Bold";
+    font-size: 16px;
+}
+
